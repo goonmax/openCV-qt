@@ -9,16 +9,26 @@
 #include <stdexcept>
 #include <vector>
 using namespace std;
+using namespace cv;
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
+    Mat img;
+    VideoCapture cam(0);
+    namedWindow("CameraObjectTrace");
+
+
+    while(1){
+        cam >> img;
+        imshow("CameraObjectTrace", img);
+
+
+        if(waitKey(1) == 27)
+            break;
+    }
 
     return a.exec();
 }
-cv::Point2d tl( -122.441017, 37.815664 );
-cv::Point2d tr( -122.370919, 37.815311 );
-cv::Point2d bl( -122.441533, 37.747167 );
-cv::Point2d br( -122.3715,   37.746814 );
