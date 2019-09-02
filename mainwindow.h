@@ -2,7 +2,15 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QMessageBox>
+#include <QFileDialog>
+#include <cmath>
+#include <iostream>
+#include <stdexcept>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <sstream>
 namespace Ui {
 class MainWindow;
 }
@@ -14,6 +22,13 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+
+
+
+
+
+
 
 private:
     Ui::MainWindow *ui;
