@@ -1,3 +1,4 @@
 > create a gui
 > create a object mapping to human eyes so that its able to track humen eyes.
-> 
+> add multithreaded cameras
+> addd a funtion that takes pictures and saves them to a file with time and location.
