@@ -15,3 +15,15 @@ MainWindow::~MainWindow()
 
 
 
+
+
+void MainWindow::on_actionexit_triggered()
+{
+    QApplication::quit();
+
+}
+
+void MainWindow::on_radioButton_clicked()
+{
+
+}
