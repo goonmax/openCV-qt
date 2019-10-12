@@ -1,0 +1,2 @@
+# openCV-qt
+working progress 
